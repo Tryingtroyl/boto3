@@ -69,7 +69,7 @@ def upload_items():
     print("\nUploading items:\n")
     try:
         for i in range(201):
-            response = s3.upload_file('C:/Users/aztec/Pictures/download.jpg', bucket_name, f'images/doge_{i}.jpg')
+            response = s3.upload_file('download.jpg', bucket_name, f'images/doge_{i}.jpg')
             print(f"File uploaded successfully\nwith response {response}")
 
     except:
@@ -156,7 +156,7 @@ if __name__=='__main__':
     Anything else: To quit
     """
     execute[8]()
-    time.sleep(2)
+    time.sleep(1)
 
     while(True):
         print(PROMPT)
